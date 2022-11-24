@@ -11,7 +11,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Com um plano", "Estrategia", "Profissional!" ];
+  const toRotate = [ "Marketing", "Site", "Análise!" ];
   const period = 2000;
 
   useEffect(() => {
@@ -56,7 +56,7 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">BLACK FRIDAY SOUSAS MIDIA</span>
-                <h1>{`Sua empresa`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
+                <h1>{`Os melhores planos de`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
                   <p>Acreditamos que a comunicação entre empresas e clientes nunca foi tão fácil, vivemos em um momento onde o cliente está a um direct de distância para uma compra, reclamação, elogio, sugestão para qualquer marca, desde a padaria do seu Tião até as maiores empresas de tecnologia.</p>
                   <button onClick={() => console.log('connect')}>Saiba mais <ArrowRightCircle size={25} /></button>
               </div>}
