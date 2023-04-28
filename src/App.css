@@ -31,8 +31,8 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background-color: #121212 !important;
-  color: #fff !important;
+  background-color: #fff!important;
+  color: #ffffff !important;
   font-family: 'Centra', sans-serif !important;
 }
 
@@ -95,7 +95,13 @@ nav.navbar.scrolled {
   background-color: #121212;
 }
 nav.navbar a.navbar-brand {
-    width: 9%;
+    width: 20%;
+}
+
+@media only screen and (max-width: 600px) {
+  nav.navbar a.navbar-brand {
+    width: 50%;
+}
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
@@ -233,11 +239,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Banner Css ************/
 .banner {
   margin-top: 0;
-  padding: 260px 0 100px 0;
-  background-image: url('./assets/img/banner-bg.png');
-  background-position: top center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  padding: 80px 0 100px 0;
+  background-color: #b961d3;
 }
 .banner .tagline {
   font-weight: 700;
@@ -250,7 +253,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: inline-block;
 }
 .banner h1 {
-  font-size: 65px;
+  font-size: 40px;
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1;
@@ -258,14 +261,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: block;
 }
 .banner p {
-  color: #B8B8B8;
+  color: #ffffff;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
   width: 96%;
 }
 .banner button {
-  color: #fff;
+  color: #ffffff;
   font-weight: 700;
   font-size: 20px;
   margin-top: 60px;
@@ -306,23 +309,38 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
 }
 .skill-bx {
-  background: #151515;
+  background: #b961d3;
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;
-  margin-top: -60px;
+  margin-top: 20px;
+}
+.skill-bx2 {
+  background: #ffffff;
+  border-radius: 64px;
+  text-align: center;
+  padding: 60px 50px;
+  margin-top: 20px;
 }
 .skill h2 {
 	font-size: 45px;
 	font-weight: 700;
 }
 .skill p {
-    color: #B8B8B8;
+    
     font-size: 18px;
     letter-spacing: 0.8px;
     line-height: 1.5em;
     margin: 14px 0 75px 0;
 }
+
+#corel1 {
+  color: #000000;
+}
+#corel2 {
+  color: #000000;
+}
+
 .skill-slider {
   width: 80%;
   margin: 0 auto;

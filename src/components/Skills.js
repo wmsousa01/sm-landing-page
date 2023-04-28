@@ -30,35 +30,33 @@ export const Skills = () => {
 
   return (
     <section className="skill" id="skills">
-        <div className="container">
-            <div className="row">
-                <div className="col-12">
-                    <div className="skill-bx wow zoomIn">
-                        <h2>Nossos serviços</h2>
-                        <p>As redes sociais estão cada vez mais presentes na vida das pessoas. Hoje, é imprescindível ir além da presença e é preciso se engajar e ter uma estratégia de marketing eficiente.</p>
-                        <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
-                            <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Estratégia</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter2} alt="Image" />
-                                <h5>Criação de conteúdo</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter3} alt="Image" />
-                                <h5>Análise de dados</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Gestão de redes sociais</h5>
-                            </div>
-                        </Carousel>
-                    </div>
-                </div>
+      <div className="container">
+        <div className="row">
+          <div className="col-12">
+            <div className="skill-bx wow zoomIn">
+              <p>Da configuração a otimização! Esse é o #social o plano pensado para facilitar o
+                dia a dia da comunicação nas redes sociais  da sua empresa!</p>
             </div>
+          </div>
         </div>
-        <img className="background-image-left" src={colorSharp} alt="Image" />
+        <div className="row">
+          <div className="col-12">
+            <div className="skill-bx2 wow zoomIn">
+              <p id="corel1">Usamos nossas experiências dos últimos 2 anos e mais de 30 empresas testadas para 
+                criar um serviço que realmente funciona de acordo com a necessidade da sua empresa.</p>
+            </div>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-12">
+            <div className="skill-bx2 wow zoomIn">
+              <p id="corel1">O controle nas suas mãos! Elaboramos os relatórios de todo o processo, com definição 
+                de metas com foco em resultados.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img className="background-image-left" src={colorSharp} alt="Image" />
     </section>
   )
 }

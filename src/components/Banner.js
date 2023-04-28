@@ -11,7 +11,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Marketing", "Site", "Análise!" ];
+  const toRotate = [ "DECOLAR!" ];
   const period = 2000;
 
   useEffect(() => {
@@ -51,18 +51,7 @@ export const Banner = () => {
     <section className="banner" id="home">
       <Container>
         <Row className="aligh-items-center">
-          <Col xs={12} md={6} xl={7}>
-            <TrackVisibility>
-              {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">BLACK FRIDAY SOUSAS MIDIA</span>
-                <h1>{`Os melhores planos de`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Acreditamos que a comunicação entre empresas e clientes nunca foi tão fácil, vivemos em um momento onde o cliente está a um direct de distância para uma compra, reclamação, elogio, sugestão para qualquer marca, desde a padaria do seu Tião até as maiores empresas de tecnologia.</p>
-                  <button onClick={() => console.log('connect')}>Saiba mais <ArrowRightCircle size={25} /></button>
-              </div>}
-            </TrackVisibility>
-          </Col>
-          <Col xs={12} md={6} xl={5}>
+        <Col xs={12} md={6} xl={5}>
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
@@ -70,6 +59,17 @@ export const Banner = () => {
                 </div>}
             </TrackVisibility>
           </Col>
+          <Col xs={12} md={6} xl={7}>
+            <TrackVisibility>
+              {({ isVisible }) =>
+              <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                <h1>{`JÁ É HORA DA SUA EMPRESA`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
+                  <p>Vamos potencializar as sua vendar usando as redes sociais e o melhor analisando cada passo da experiência do seu cliente. Os dados trabalhando a favor das suas vendas e fornecendo informações para entender melhor o seu publico.</p>
+                  <button onClick={() => console.log('connect')}>Saiba mais <ArrowRightCircle size={25} /></button>
+              </div>}
+            </TrackVisibility>
+          </Col>
+          
         </Row>
       </Container>
     </section>
