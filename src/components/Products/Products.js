@@ -3,7 +3,7 @@ import Card from "./Card";
 
 const Products = () => {
   return (
-    <div className="products" id="home">
+    <div className="products" id="products">
       <div className="products-header">
         <h1>Pronto para transformar sua presença nas redes sociais?</h1>
       </div>
