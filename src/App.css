@@ -93,7 +93,7 @@ nav.navbar {
 }
 nav.navbar.scrolled {
   padding: 0px 0;
-  background-color: #121212;
+  background-color: #fff;
 }
 nav.navbar a.navbar-brand {
     width: 20%;
@@ -109,10 +109,11 @@ nav.navbar a.navbar-brand {
   padding: 80px 0 100px 0;
   background-color: #b961d3;
 }
+
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
-  color: #fff !important;
+  color: #121212!important;
   letter-spacing: 0.8px;
   padding: 0 25px;
   font-size: 18px;
@@ -147,7 +148,7 @@ span.navbar-text {
     width: 42px;
     height: 42px;
     position: absolute;
-    background-color: #ffffff;
+    background-color: #121212;
     border-radius: 50%;
     transform: scale(0);
 	transition: 0.3s ease-in-out;
@@ -165,8 +166,8 @@ span.navbar-text {
 }
 .navbar-text button {
   font-weight: 700;
-  color: #fff;
-  border: 1px solid #fff;
+  color: #121212;
+  border: 1px solid #121212;
   padding: 18px 34px;
   font-size: 18px;
   margin-left: 18px;
@@ -182,14 +183,14 @@ span.navbar-text {
   width: 0%;
   height: 100%;
   position: absolute;
-  background-color: #fff;
+  background-color: #121212;
   left: 0;
   top: 0;
   z-index: -1;
   transition: 0.3s ease-in-out;
 }
 .navbar-text button:hover {
-  color: #121212;
+  color: #FFF;
 }
 .navbar-text button:hover::before {
 	content: "";
@@ -207,19 +208,19 @@ nav.navbar .navbar-toggler-icon {
   height: 17px;
   background-image: none;
   position: relative;
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #121212;
   transition: all 300ms linear;
   top: -2px;
 }
 nav.navbar .navbar-toggler-icon:focus {
-	border-bottom: 2px solid #fff;
+	border-bottom: 2px solid #121212;
 }
 nav.navbar .navbar-toggler-icon:after,
 nav.navbar .navbar-toggler-icon:before {
 	width: 24px;
 	position: absolute;
 	height: 2px;
-	background-color: #fff;
+	background-color: #121212;
 	top: 0;
 	left: 0;
 	content: '';
@@ -231,12 +232,12 @@ nav.navbar .navbar-toggler-icon:after {
 }
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
 	transform: rotate(45deg);
-	background-color: #fff;
+	background-color: #121212;
 	height: 2px;
 }
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 	transform: translateY(8px) rotate(-45deg);
-	background-color: #fff;
+	background-color: #121212;
 	height: 2px;
 }
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
@@ -494,6 +495,31 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
+/************ Products Css ************/
+.products {
+  margin-top: 0;
+  padding: 80px 0 100px 0;
+  background-color: #b961d3;
+}
+
+.products-header {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.card-section {
+  
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.cards {
+
+  padding: 100px 0 100;
+  margin-top: 5%;
+}
 /************ Projects Css ************/
 .contact {
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
