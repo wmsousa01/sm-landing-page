@@ -1,32 +1,40 @@
-
 .card {
   box-sizing: border-box;
   width: 327px;
-  height: 492px;
+  height: 480px;
   flex-shrink: 0;
   background: #f9f8f9;
   border-radius: 8px;
   box-shadow: 12px 12px 32px 0px rgba(46, 47, 58, 0.08);
   display: flex;
+  flex-direction: column; /* Change flex-direction to column */
+  align-items: center; /* Center the content horizontally */
+  justify-content: center; /* Center the content vertically */
+  margin: 2px; /* Adjust the margin as needed */
 }
 
 .card-header {
   color: #2b2d41;
-  text-align: left;
+  text-align: center;
   font: "Helvetica Neue";
-
-  width: 300px;
+  width: 100%;
+  margin: 5px 0; /* Adjust the margin as needed */
 }
 
-.price-section {
-  
+.card-image {
+  max-height: 100%; /* Adjust the image size as needed */
+  max-width: 40%; /* Adjust the image size as needed */
+  margin: 5px 0; /* Adjust the margin as needed */
 }
+
 .card-price {
   color: #2b2d41;
   text-align: left;
   font: 800 24px/32px "Plus Jakarta Sans", sans-serif;
   width: 204px;
+  margin: 5px 0; /* Adjust the margin as needed */
 }
+
 .card-paragraph {
   color: #787878;
   text-align: left;
@@ -35,23 +43,20 @@
   width: 226px;
   transform-origin: 0 0;
   transform: rotate(0deg) scale(1, 1);
+  margin: 5px 0; /* Adjust the margin as needed */
 }
 
 .card-button {
-    background: #3a4acd;
-    border-radius: 16px;
-    width: 209px;
-    height: 48px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 5%;
-    color: #FFFFFF;
-  }
-.card-body {
+  background: #3a4acd;
+  border-radius: 16px;
+  width: 209px;
+  height: 48px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10%;
+  margin: 5px auto; /* Adjust the margin as needed */
+  color: #FFFFFF;
 }
 
+.card-body {
+  display: block;
+  margin: 5px auto; /* Adjust the margin as needed */
+}

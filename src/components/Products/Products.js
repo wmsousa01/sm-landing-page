@@ -1,5 +1,8 @@
 import React from "react";
 import Card from "./Card";
+import PlanImgB from "./product-img/plano-basico.png"
+import PlanImgI from "./product-img/plano-intermediario.png"
+import PlanImgP from "./product-img/plano-premium.png"
 
 const Products = () => {
   return (
@@ -10,8 +13,9 @@ const Products = () => {
       <div className="card-section">
         <div className="cards">
           <Card
+            logo={PlanImgB}
             header="Plano Básico"
-            paragraph="Criação de um site de alta qualidade, gerenciamento de mídias sociais, criação de conteúdo de marketing, SEO e otimização de conversões."
+            paragraph="Inicie sua jornada digital conosco. Gerenciamos sua presença online, criamos conteúdo relevante e monitoramos o desempenho. Nosso objetivo? Ajudá-lo a vender mais!"
             price="R$ 1200,00/mês"
             alert="Contrato de 12 meses"
             button="Assine agora!" 
@@ -20,8 +24,9 @@ const Products = () => {
         </div>
         <div className="cards">
           <Card
+            logo={PlanImgI}
             header="Plano Intermediário"
-            paragraph="Tudo o que o Plano Básico oferece, além de campanhas de marketing por e-mail, publicidade paga, marketing de influência, marketing de conteúdo e análise de dados."
+            paragraph="Leve seu negócio ao próximo nível. Com gestão de CRM, criação de landing pages, campanhas sazonais e mais, nosso objetivo é ajudá-lo a fidelizar mais clientes."
             price="R$ 2400,00/mês"
             alert="Contrato de 12 meses"
             button="Assine agora!"
@@ -30,8 +35,9 @@ const Products = () => {
         </div>
         <div className="cards">
           <Card
+            logo={PlanImgP}
             header="Plano Premium"
-            paragraph="O Plano Básico oferece tudo, incluindo campanhas de marketing por e-mail, publicidade paga, marketing de influência e análise de dados."
+            paragraph="Para líderes de mercado, oferecemos um pacote completo: site React, blog ou canal no YouTube, organização de eventos ou webinars. Nosso objetivo? Fazer de você uma autoridade no seu mercado!"
             price="R$ 4800/mês"
             alert="Contrato de 12 meses"
             button="Assine agora!"
